@@ -29,7 +29,6 @@ A production-style lead management dashboard built as a TypeScript monorepo.
   - Search by name/mobile/email
 - CSV and Excel export
 - Gemini-powered insights card
-- Seed script for sample data
 - Pagination, validation, centralized error handling, indexes
 
 ## Project Structure
@@ -97,12 +96,6 @@ cp frontend/.env.example frontend/.env.local
 
 ```env
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
-```
-
-### 4. Seed sample data
-
-```bash
-npm run seed
 ```
 
 ### 5. Run the app

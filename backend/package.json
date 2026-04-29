@@ -6,8 +6,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "lint": "eslint src --ext .ts",
-    "seed": "tsx src/seed.ts"
+    "lint": "eslint src --ext .ts"
   },
   "dependencies": {
     "@google/genai": "^1.0.0",

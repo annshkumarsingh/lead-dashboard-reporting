@@ -49,7 +49,7 @@ export default async function LeadsPage({
 
       <LeadForm />
 
-      <LeadTable leads={data.items} showActions />
+      <LeadTable leads={data.items} />
 
       <div className="flex flex-col gap-3 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <div>
