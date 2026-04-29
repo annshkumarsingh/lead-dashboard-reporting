@@ -9,8 +9,8 @@ const router = Router();
 router.get("/distinct", asyncHandler(controller.distinct));
 router.post("/", validateRequest(createLeadSchema), asyncHandler(controller.create));
 router.get("/", validateRequest(leadQuerySchema), asyncHandler(controller.list));
-router.get("/:id", asyncHandler(controller.getOne));
-router.patch("/:id", validateRequest(updateLeadSchema), asyncHandler(controller.update));
-router.delete("/:id", asyncHandler(controller.remove));
+router.get("/:id", asyncHandler(controller.getOne as any));
+router.patch("/:id", validateRequest(updateLeadSchema), asyncHandler(controller.update as any));
+router.delete("/:id", asyncHandler(controller.remove as any));
 
 export default router;
